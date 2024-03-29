@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <label for="">
+        <div>
+            Length: <input type="number" id="length" value="1">
+        </div>
+        <div>
+            Numbers: <input type="checkbox" name="" id="numcheck">
+        </div>
+        <div>
+            Capital Letters (A-Z): <input type="checkbox" name="" id="capcheck">
+        </div>
+        <div>
+            Small Letters (a-z): <input type="checkbox" name="" id="smallcheck">
+        </div>
+        <div>
+            Special Character (!, @, #, $, %, ^, &, *): <input type="checkbox" name="" id="speccheck">
+        </div>
+        <div>
+            Minimal Numbers: <input type="number" id="numlength" value="0">
+        </div>
+        <div>
+            Minimal Special Characters: <input type="number" id="speclength" value="0">
+        </div>
+        <div>
+            <textarea name="password" id="output" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button onclick="generatePassword()">Gimme</button>
+        </div>
+    </label>
+</body>
+</html>
